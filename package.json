@@ -1,20 +1,39 @@
 {
-  "name": "electron-quick-start",
+  "name": "Focus-Jutsu",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "homepage": "",
+  "author": {
+    "name": "Abhigyan Mohanta",
+    "email": "underthunder02@gmail.com",
+    "url": "https://abhigyan.start.page"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "linux": {
+      "target": [
+        "snap",
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    }
+  },
+  "repository": "https://github.com/ABHIGYAN-MOHANTA/Focused-Jutsu-Desktop-App",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Focus",
+    "Jutsu",
+    "Studio",
+    "Ghibli",
+    "Naruto",
+    "Pomodoro",
+    "Timer"
   ],
-  "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^27.1.0"
