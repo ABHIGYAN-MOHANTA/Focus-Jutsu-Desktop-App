@@ -3,7 +3,9 @@
 
 **Full Support for Linux Windows MacOs**
 
-Do check out the releases section, for your respective installer. Have fun! 
+Do check out the releases section, for your respective installer. Have fun!
+
+<img src="./images/FocusJutsu.png" alt="FocusJutsu.png"></img>
 
 ## Local Setup
 
