@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Focus Jutsu: Studio Ghibli Melodies</title>
+  </head>
+  <body>
+    <button id="study-music">Studio Ghibli Music</button>
+    <div>
+      <h1 class="visibility">Focus Jutsu</h1>
+      <span class="visibility"
+        >We are using Node.js, Chromium and Electron.</span
+      >
+      <span class="visibility" id="test-notifications"
+        >Click to Test Notifications ※\(^o^)/※</span
+      >
+    </div>
+    <div>
+      <p id="timer" class="visibility">25:00</p>
+      <div id="statusDisplay" class="visibility"></div>
+      <div class="buttonContainer">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <audio id="notificationAudio" src="./audio/notification.mp3"></audio>
+    <audio id="studyAudio" src="./audio/study.mp3"></audio>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
