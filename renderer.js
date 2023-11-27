@@ -82,6 +82,9 @@ function startWorkTimer() {
 }
 
 function startBreakTimer() {
+  const workCounter = document.getElementById("work-counter");
+    // console.log(workCounter.textContent);
+    workCounter.textContent = Number(workCounter.textContent) + 1;
   timerInterval = setInterval(() => {
     if (timeLeft > 0) {
       timeLeft--;
